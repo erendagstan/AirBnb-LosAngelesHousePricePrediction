@@ -16,5 +16,4 @@ mlxtend==0.22.0
 surprise==0.1
 scipy==1.11.1
 pydotplus==2.0.2
-graphviz==2.50.0
 skompiler==0.7
