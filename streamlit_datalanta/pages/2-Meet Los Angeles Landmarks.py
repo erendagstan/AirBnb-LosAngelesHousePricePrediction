@@ -20,8 +20,8 @@ st.set_page_config(
 # Load data
 @st.cache_data
 def load_data():
-    df_landmark = pd.read_csv("DatalantaProject/datasets/la_landmarks.csv", low_memory=False)
-    df_la = pd.read_csv("DatalantaProject/datasets/la_dataframe_v4.csv", low_memory=False)
+    df_landmark = pd.read_csv("DatalantaProject/streamlit_datalanta/datasets/la_landmarks.csv", low_memory=False)
+    df_la = pd.read_csv("DatalantaProject/streamlit_datalanta/datasets/la_dataframe_v4.csv", low_memory=False)
     return df_landmark, df_la
 
 

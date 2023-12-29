@@ -19,9 +19,9 @@ st.header(":red[Air Bnb: House Price Prediction]")
 # loading data
 @st.cache_data
 def load_model_and_data():
-    df_model = pd.read_csv("DatalantaProject/datasets/model_datalanta_dataset.csv")
+    df_model = pd.read_csv("DatalantaProject/streamlit_datalanta/datasets/model_datalanta_dataset.csv")
     df_model = df_model.drop('Unnamed: 0', axis=1)
-    model = joblib.load("DatalantaProject/model/xgb_model.joblib")
+    model = joblib.load("DatalantaProject/streamlit_datalanta/model/xgb_model.joblib")
     return df_model, model
 
 
