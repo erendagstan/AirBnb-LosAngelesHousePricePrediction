@@ -4,6 +4,7 @@ import folium
 import pydeck as pdk
 from streamlit_folium import st_folium, folium_static
 from folium.plugins import Draw
+import time
 import numpy as np
 
 pd.set_option('display.max_columns', None)
@@ -31,15 +32,15 @@ for i in range(1, 101):
 # datasetlerin yüklenmesi
 @st.cache_data
 def load_data():
-    df_houses = pd.read_csv("streamlit_datalanta/datasets/airbnb-listings.csv", sep=";", low_memory=False)
-    df_fire_stations = pd.read_csv("streamlit_datalanta/datasets/Fire_Stations-new.csv", low_memory=False)
-    df_police_station = pd.read_csv("streamlit_datalanta/datasets/Sheriff_and_Police_Stations.csv", low_memory=False)
-    df_hosp2 = pd.read_csv("streamlit_datalanta/datasets/Hospitals_and_Medical_Centers.csv", low_memory=False)
-    df_school = pd.read_csv("streamlit_datalanta/datasets/Schools_Colleges_and_Universities.csv", low_memory=False)
-    metro_df = pd.read_csv("streamlit_datalanta/datasets/Metro_Rail_Lines_Stops.csv", low_memory=False)
-    df_arrest = pd.read_csv("streamlit_datalanta/datasets/arrests_2017.csv", parse_dates=["Arrest Date"])
-    df_landmark = pd.read_csv("streamlit_datalanta/datasets/la_landmarks.csv", low_memory=False)
-    df_coffee = pd.read_csv("streamlit_datalanta/datasets/la_coffees_filtered.csv", low_memory=False)
+    df_houses = pd.read_csv("DatalantaProject/datasets/airbnb-listings.csv", sep=";", low_memory=False)
+    df_fire_stations = pd.read_csv("DatalantaProject/datasets/Fire_Stations-new.csv", low_memory=False)
+    df_police_station = pd.read_csv("DatalantaProject/datasets/Sheriff_and_Police_Stations.csv", low_memory=False)
+    df_hosp2 = pd.read_csv("DatalantaProject/datasets/Hospitals_and_Medical_Centers.csv", low_memory=False)
+    df_school = pd.read_csv("DatalantaProject/datasets/Schools_Colleges_and_Universities.csv", low_memory=False)
+    metro_df = pd.read_csv("DatalantaProject/datasets/Metro_Rail_Lines_Stops.csv", low_memory=False)
+    df_arrest = pd.read_csv("DatalantaProject/datasets/arrests_2017.csv", parse_dates=["Arrest Date"])
+    df_landmark = pd.read_csv("DatalantaProject/datasets/la_landmarks.csv", low_memory=False)
+    df_coffee = pd.read_csv("DatalantaProject/datasets/la_coffees_filtered.csv", low_memory=False)
     return df_houses, df_fire_stations, df_police_station, df_hosp2, df_school, metro_df, df_arrest, df_landmark, df_coffee
 
 
