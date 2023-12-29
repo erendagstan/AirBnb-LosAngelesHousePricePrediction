@@ -25,7 +25,7 @@ column1.markdown("<h3 style='line-height: 1.6;'>Analizde kullanılan veri seti, 
                  "faktörleri içererek, kullanıcılara daha bilinçli kararlar vermeleri için değerli bir kaynak sunmaktadır.</h3>",
                  unsafe_allow_html=True)
 
-column2.image("DatalantaProject/streamlit_datalanta/mike-von-iFcuaH0fkKU-unsplash.jpg", use_column_width=True)
+column2.image("streamlit_datalanta/mike-von-iFcuaH0fkKU-unsplash.jpg", use_column_width=True)
 
 st.header(":red[Los Angeles Maps]")
 st.markdown(
